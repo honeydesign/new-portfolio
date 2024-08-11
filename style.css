@@ -2,6 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+.skills h3{
+    font-family: "Rubik", sans-serif;
 }
 
 .header{
@@ -75,6 +81,32 @@
     box-shadow: #000;
 }
 
+.social{
+    margin-bottom: 40px;
+}
+
+.social i{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    color: #000;
+    border-radius: 50%;
+    border: 2px solid #000;
+    backdrop-filter: brightness(88%);
+    font-size: 20px;
+    margin-right: 17px;
+    box-shadow: 0 0 20px transparent;
+    cursor: pointer;
+    transition: all .50s ease;
+}
+
+.social i:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #000;
+}
+
 .hero-pic img{
     height: 100%;
     width: 100%;
@@ -91,6 +123,10 @@
     font-family: "Rubik Bubbles", system-ui;
     font-size: 40px;
     padding-bottom: 20px;
+}
+
+.hero-text p{
+    line-height: 25px;
 }
 
 .btn-group{
@@ -112,6 +148,479 @@
     border-color: #fff;
 }
 
+.skills{
+    padding-top: 90px;
+}
+
+.skill-left{
+    background-color: #fff;
+    color: #000;
+    border-radius: 30px;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 5px solid #000;
+    box-shadow: 0 0 .5rem #000 ;
+}
+
+.skill-middle{
+    background-color: #fff;
+    color: #000;
+    border-radius: 30px;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 5px solid #000;
+    box-shadow: 0 0 .5rem #000 ;
+}
+
+.skill-right{
+    background-color: #fff;
+    color: #000;
+    border-radius: 30px;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 5px solid #000;
+    box-shadow: 0 0 .5rem #000 ;
+}
+
+.skill-main{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 30px;
+    grid-column-gap: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.skill-bar{
+    margin-bottom: 2.3rem;
+}
+
+.skill-bartwo{
+    margin-bottom: 2.3rem;
+}
+
+.skill-barthree{
+    margin-bottom: 2.3rem;
+}
+
+.skill-main h3{
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.skill-left .skill-bar .info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.skill-middle .skill-bartwo .infotwo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.skill-right .skill-barthree .infothree{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.skill-left .skill-bar .bar{
+    width: 100%;
+    height: 10px;
+    background-color: #d5d5d5;
+    border-radius: 25px;
+    margin-top: 10px;
+    position: relative;
+}
+
+.skill-middle .skill-bartwo .bartwo{
+    width: 100%;
+    height: 10px;
+    background-color: #d5d5d5;
+    border-radius: 25px;
+    margin-top: 10px;
+    position: relative;
+}
+
+.skill-right .skill-barthree .barthree{
+    width: 100%;
+    height: 10px;
+    background-color: #d5d5d5;
+    border-radius: 25px;
+    margin-top: 10px;
+    position: relative;
+}
+
+.skill-bar .bar span{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    background: #000;
+    border-radius: 25px;
+    box-shadow: 0 0 .5rem #000 ;
+}
+
+.skill-bartwo .bartwo span{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    background: #000;
+    border-radius: 25px;
+    box-shadow: 0 0 .5rem #000 ;
+}
+
+.skill-barthree .barthree span{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    background: #000;
+    border-radius: 25px;
+    box-shadow: 0 0 .5rem #000 ;
+}
+
+
+.skill-bar .bar .useri{
+    width: 100%;
+    animation: useri 2s;
+}
+
+
+.skill-bartwo .bartwo .html{
+    width: 100%;
+    animation: html 2s;
+}
+
+.skill-barthree .barthree .python{
+    width: 90%;
+    animation: python 2s;
+}
+
+
+.skill-bar .bar .usere{
+    width: 90%;
+    animation: usere 3s;
+}
+
+.skill-bartwo .bartwo .css{
+    width: 100%;
+    animation: css 3s;
+}
+
+.skill-barthree .barthree .go{
+    width: 10%;
+    animation: go 3s;
+}
+
+
+.skill-bar .bar .prototyping{
+    width: 100%;
+    animation: prototyping 4s;
+}
+
+.skill-bartwo .bartwo .java{
+    width: 90%;
+    animation: java 4s;
+}
+
+
+.skill-bar .bar .figma{
+    width: 100%;
+    animation: figma 5s;
+}
+
+.skill-bartwo .bartwo .react{
+    width: 80%;
+    animation: react 5s;
+}
+
+
+@keyframes useri {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+    
+}
+
+@keyframes html {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+    
+}
+
+@keyframes python {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+    
+}
+
+@keyframes usere {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+    
+}
+
+@keyframes css {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+    
+}
+
+@keyframes go {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 10%;
+    }
+    
+}
+
+@keyframes prototyping {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+    
+}
+
+@keyframes java {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+    
+}
+
+@keyframes figma {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+    
+}
+
+@keyframes react {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 80%;
+    }
+    
+}
+
+.main-text{
+    font-family: "Rubik Bubbles", system-ui;
+    font-size: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.portfolio h2{
+    font-family: "Rubik Bubbles", system-ui;
+    font-size: 30px;
+    padding-top: 80px;
+    text-align: center;
+}
+
+.portfolio{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+.portfolio-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    align-items: center;
+    gap: 2.3rem;
+    margin-top: 4.2rem;
+}
+
+.row img{
+    height: auto;
+    width: 100%;
+    border-radius: 28px;
+    margin-bottom: 1.4rem;
+}
+
+.row{
+    background: #fff;
+    border-radius: 28px;
+    border: 1px solid transparent;
+    box-shadow: 0 0 .5rem #000 ;
+    padding: 20px;
+    transition: all .50s ease;
+}
+
+.main-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+.row h5{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "Rubik", sans-serif;
+    color: #d5d5d5;
+
+}
+
+.row i{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 55px;
+    height: 55px;
+    font-size: 27px;
+    border-radius: 50%;
+    color: #000;
+    background: #d5d5d5;
+}
+
+.row h4{
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    line-height: 1.4;
+    font-family: "Rubik", sans-serif;
+}
+
+.row:hover{
+    border: 1px solid #000;
+    transform: translateY(-5px) scale(1.03);
+    cursor: pointer;
+}
+
+.contact h2{
+    font-family: "Rubik Bubbles", system-ui;
+    font-size: 30px;
+    padding-top: 80px;
+    text-align: center;
+    
+}
+
+.contact-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4.2rem;
+}
+
+.contact-form form{
+    position: relative;
+    width: 600px;
+}
+
+form input,
+form textarea{
+    width: 100%;
+    padding: 20px;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 .5rem #000 ;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+form input::placeholder,
+form textarea::placeholder{
+    color: #d5d5d5;
+    font-size: 15px;
+}
+
+form .send-btn{
+    display: inline-block;
+    padding: 11px 26px;
+    background: #000;
+    color: #fff;
+    border: 2px solid black;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    transition: all .50s ease;
+    width: 30%;
+}
+
+form .send-btn:hover{
+    background: transparent;
+    color: #000;
+    box-shadow: 0 0 20px #000;
+    cursor: pointer;
+}
+
+.footer{
+    padding: 22px 16%;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    color: #fff;
+}
+
+.copyright p{
+    font-size: 15px;
+    font-weight: 300;
+    font-family: "Rubik", sans-serif;
+}
+
+.scroll-top i{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #d5d5d5;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 27px;
+}
+
+.scroll-scale{
+    opacity: 0;
+    transform: scale(.9);
+    transition: all 2s;
+}
 
 @media (max-width: 768px) {
     .header-one {
@@ -147,7 +656,53 @@
         font-size: 30px;
     }
 
-    
+    .skill-main {
+        grid-template-columns: 1fr; /* Stack all skills vertically on smaller screens */
+        grid-row-gap: 20px;
+        grid-column-gap: 0;
+    }
+
+    .skill-left,
+    .skill-middle,
+    .skill-right {
+        padding: 15px;
+    }
+
+    .skill-bar .bar span,
+    .skill-bartwo .bartwo span,
+    .skill-barthree .barthree span {
+        box-shadow: 0 0 0.3rem #000; /* Slightly smaller shadow on smaller screens */
+    }
+
+    .skill-main h3 {
+        font-size: 1.5rem; /* Adjust font size for headings on smaller screens */
+    }
+
+    .main-text {
+        font-size: 18px; /* Adjust text size */
+    }
+
+    .contact h2 {
+        font-size: 24px; /* Smaller font size for smaller screens */
+        padding-top: 60px;
+    }
+
+    .contact-form form {
+        width: 90%; /* Form takes full width on smaller screens */
+    }
+
+    form .send-btn {
+        width: 100%; /* Button takes full width on smaller screens */
+        text-align: center;
+        padding: 14px; /* Increase padding for better touch targets */
+    }
+
+    form input,
+    form textarea {
+        padding: 15px; /* Adjust padding for smaller screens */
+        font-size: 14px; /* Adjust font size */
+    }
+
 }
 
 @media (max-width: 480px) {
@@ -181,3 +736,4 @@
         font-size: 14px;
     }
 }
+
